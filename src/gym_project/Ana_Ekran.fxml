@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gym_project.Ana_EkranController">
+   <children>
+      <Pane layoutX="572.0" layoutY="26.0" prefHeight="171.0" prefWidth="161.0">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="111.0" layoutX="23.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="malzeme" layoutX="23.0" layoutY="122.0" mnemonicParsing="false" onAction="#malzemeler" prefHeight="29.0" prefWidth="90.0" text="Malzemeler">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow color="#e48282" />
+         </effect>
+      </Pane>
+      <Pane layoutX="222.0" layoutY="26.0" prefHeight="171.0" prefWidth="161.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/005-user.png" />
+               </image>
+               <effect>
+                  <InnerShadow color="#ff8484" />
+               </effect>
+            </ImageView>
+            <ComboBox fx:id="Secim" layoutX="29.0" layoutY="124.0" onAction="#Sec" prefHeight="25.0" prefWidth="103.0" promptText="Antrenörler" visibleRowCount="13">
+               <effect>
+                  <InnerShadow color="#ff6d6d" />
+               </effect>
+            </ComboBox>
+         </children>
+      </Pane>
+      <Pane layoutX="402.0" layoutY="26.0" prefHeight="171.0" prefWidth="161.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/001-interface-1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bolumler" layoutX="40.0" layoutY="121.0" mnemonicParsing="false" onAction="#bolumler" prefHeight="29.0" prefWidth="82.0" text="Bölümler">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow color="#f28585" />
+         </effect>
+      </Pane>
+      <Pane layoutX="42.0" layoutY="383.0" prefHeight="171.0" prefWidth="202.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/002-direction-1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exit" layoutX="36.0" layoutY="111.0" mnemonicParsing="false" onAction="#exit" prefHeight="29.0" prefWidth="90.0" text="Exit">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow color="#dd8585" />
+         </effect>
+      </Pane>
+      <Pane layoutX="35.0" layoutY="26.0" prefHeight="171.0" prefWidth="150.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/005-user.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Uyeler" layoutX="38.0" layoutY="123.0" mnemonicParsing="false" onAction="#uyeler" prefHeight="25.0" prefWidth="75.0" text="Üyeler">
+               <effect>
+                  <InnerShadow color="#fc6969" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <InnerShadow color="#da7b7b" />
+   </effect>
+</AnchorPane>

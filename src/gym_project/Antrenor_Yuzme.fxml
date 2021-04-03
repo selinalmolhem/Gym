@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gym_project.Antrenor_YuzmeController">
+   <children>
+      <TableView layoutX="348.0" prefHeight="615.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="53.0" text="id" />
+          <TableColumn fx:id="isim" prefWidth="42.0" text="isim" />
+            <TableColumn fx:id="tel_numarasi" prefWidth="83.0" text="Tel_Numarasi" />
+            <TableColumn fx:id="email" prefWidth="73.0" text="Email" />
+            <TableColumn fx:id="weight" prefWidth="66.0" text="Weight" />
+            <TableColumn fx:id="egitim_duzeyi" prefWidth="78.0" text="Eğitim_düzeyi" />
+            <TableColumn fx:id="maas" prefWidth="44.0" text="Maaş" />
+        </columns>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#ffb7b7" />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Pane prefHeight="523.0" prefWidth="338.0">
+         <children>
+            <TextField fx:id="id" layoutX="14.0" layoutY="140.0" promptText="id">
+               <effect>
+                  <InnerShadow color="#e48787" />
+               </effect>
+            </TextField>
+            <TextField fx:id="isim" layoutX="14.0" layoutY="182.0" promptText="isim">
+               <effect>
+                  <InnerShadow color="#ffb1b1" />
+               </effect>
+            </TextField>
+            <TextField fx:id="Tel_Num" layoutX="14.0" layoutY="228.0" promptText="Tel_Numarası">
+               <effect>
+                  <InnerShadow color="#ff9f9f" />
+               </effect>
+            </TextField>
+            <TextField fx:id="E_mail" layoutX="14.0" layoutY="270.0" promptText="E_mail">
+               <effect>
+                  <InnerShadow color="#e47c7c" />
+               </effect>
+            </TextField>
+            <TextField fx:id="Weight" layoutX="183.0" layoutY="140.0" promptText="Weight">
+               <effect>
+                  <InnerShadow color="#d37d7d" />
+               </effect>
+            </TextField>
+            <TextField fx:id="Egitmen_Duzeyi" layoutX="183.0" layoutY="182.0" promptText="Eğitim_Düzeyi">
+               <effect>
+                  <InnerShadow color="#e18282" />
+               </effect>
+            </TextField>
+            <ComboBox fx:id="secim" layoutX="33.0" layoutY="355.0" prefWidth="150.0">
+               <effect>
+                  <InnerShadow color="#eb8585" />
+               </effect>
+            </ComboBox>
+            <Label layoutX="90.0" layoutY="42.0" prefHeight="43.0" prefWidth="198.0" text="Yüzme Antrenörleri">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Maas" layoutX="183.0" layoutY="228.0" promptText="Maaş">
+               <effect>
+                  <InnerShadow color="#ff9797" />
+               </effect>
+            </TextField>
+            <Button layoutX="183.0" layoutY="355.0" mnemonicParsing="false" onAction="#Sec" text="Seç">
+               <effect>
+                  <InnerShadow color="#e18282" />
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#cd6363" height="5.93" radius="0.9824999999999999" width="0.0" />
+         </effect>
+      </Pane>
+      <Button layoutX="42.0" layoutY="540.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="78.0" text="Back">
+         <cursor>
+         </cursor>
+         <effect>
+            <InnerShadow color="#f28484" />
+         </effect>
+      </Button>
+      <Button layoutX="189.0" layoutY="540.0" mnemonicParsing="false" onAction="#Close" prefHeight="34.0" prefWidth="78.0" text="Close">
+         <effect>
+            <InnerShadow color="#ee8484" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

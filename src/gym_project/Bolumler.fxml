@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="909.0" prefWidth="1385.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gym_project.UyelerController">
+   <children>
+      <Pane layoutX="697.0" layoutY="651.0" opacity="0.7" prefHeight="258.0" prefWidth="306.0">
+         <effect>
+            <InnerShadow color="#ee8383" />
+         </effect>
+      </Pane>
+      <Label layoutX="187.0" layoutY="5.0" prefHeight="40.0" prefWidth="146.0" text="Fitness">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="5.0" prefHeight="40.0" prefWidth="146.0" text="Basketbol">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="807.0" layoutY="5.0" prefHeight="40.0" prefWidth="146.0" text="Yüzme">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1160.0" layoutY="5.0" prefHeight="40.0" prefWidth="146.0" text="Tenis">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="26.0" layoutY="486.0" prefHeight="86.0" prefWidth="614.0">
+         <children>
+            <Button fx:id="back" layoutX="110.0" layoutY="34.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="108.0" text="Back" />
+         </children>
+      </Pane>
+      <TableView layoutX="6.0" layoutY="45.0" prefHeight="430.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="Bolum_ID1" prefWidth="75.0" text="Bolum_id" />
+          <TableColumn prefWidth="75.0" text="Bolum_ismi" />
+            <TableColumn prefWidth="75.0" text="Ücret" />
+            <TableColumn prefWidth="75.0" text="Eğitmen_ismi" />
+            <TableColumn prefWidth="75.0" text="Üye_sayisi" />
+        </columns>
+      </TableView>
+      <TableView layoutX="394.0" layoutY="45.0" prefHeight="430.0" prefWidth="296.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Bolum_id" />
+          <TableColumn prefWidth="101.0" text="Takim_Üyelerin_sayisi" />
+            <TableColumn prefWidth="74.0" text="Bolum_ismi" />
+            <TableColumn prefWidth="50.0" text="Ücret" />
+        </columns>
+      </TableView>
+      <TableView layoutX="683.0" layoutY="45.0" prefHeight="441.0" prefWidth="296.0">
+        <columns>
+          <TableColumn prefWidth="58.0" text="Bolum_id" />
+          <TableColumn prefWidth="73.0" text="Bolum_ismi" />
+            <TableColumn prefWidth="46.0" text="Ücret" />
+            <TableColumn prefWidth="73.0" text="havuz_türü" />
+            <TableColumn prefWidth="45.0" text="Seviye" />
+        </columns>
+      </TableView>
+      <TableView layoutX="986.0" layoutY="45.0" prefHeight="450.0" prefWidth="393.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Bolum_id" />
+          <TableColumn prefWidth="75.0" text="Bolum_ismi" />
+            <TableColumn prefWidth="61.0" text="Ücret" />
+            <TableColumn prefWidth="89.0" text="Krtlar sayisi" />
+            <TableColumn prefWidth="88.0" text="Grup sayisi" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

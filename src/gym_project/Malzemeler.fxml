@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gym_project.MalzemelerController">
+   <children>
+      <TableView layoutX="1041.0" layoutY="76.0" prefHeight="453.0" prefWidth="300.0">
+         <columns>
+            <TableColumn fx:id="id_malzeme4" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="cihaz_ismi" prefWidth="75.0" text="Cihaz ismi" />
+            <TableColumn fx:id="etkisi" prefWidth="75.0" text="Etkisi" />
+            <TableColumn fx:id="kisi_sayi" prefWidth="75.0" text="kişi_sayi" />
+         </columns>
+         <effect>
+            <InnerShadow color="#da7777" />
+         </effect>
+      </TableView>
+      <TableView layoutX="731.0" layoutY="76.0" prefHeight="453.0" prefWidth="300.0">
+         <columns>
+            <TableColumn fx:id="id_malzeme3" prefWidth="74.0" text="id" />
+            <TableColumn fx:id="beden" prefWidth="78.0" text="ismi" />
+            <TableColumn fx:id="durum2" prefWidth="81.0" text="Durum" />
+            <TableColumn prefWidth="66.0" text="beden" />
+         </columns>
+         <effect>
+            <InnerShadow color="#e48383" />
+         </effect>
+      </TableView>
+      <TableView layoutX="403.0" layoutY="76.0" prefHeight="453.0" prefWidth="300.0">
+         <columns>
+            <TableColumn fx:id="id_malzeme2" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="tipi" prefWidth="75.0" text="Tipi" />
+            <TableColumn fx:id="marka" prefWidth="75.0" text="Marka" />
+            <TableColumn fx:id="durum1" prefWidth="75.0" text="Durum" />
+         </columns>
+         <effect>
+            <InnerShadow color="#cd7474" />
+         </effect>
+      </TableView>
+      <TableView layoutX="14.0" layoutY="76.0" prefHeight="453.0" prefWidth="373.0">
+         <columns>
+            <TableColumn fx:id="id_malzeme1" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="hacmi" prefWidth="75.0" text="Hacmi" />
+            <TableColumn fx:id="renki" prefWidth="75.0" text="Renki" />
+            <TableColumn fx:id="bolumu" prefWidth="75.0" text="Bolumu" />
+            <TableColumn fx:id="sayi" prefWidth="75.0" text="Sayi" />
+         </columns>
+         <effect>
+            <InnerShadow color="#e48989" />
+         </effect>
+      </TableView>
+      <Label layoutX="150.0" layoutY="45.0" prefHeight="17.0" prefWidth="90.0" text="Toplar">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="45.0" prefHeight="17.0" prefWidth="90.0" text="Raketler">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1126.0" layoutY="45.0" prefHeight="26.0" prefWidth="129.0" text="Fitness cihazları">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="777.0" layoutY="45.0" prefHeight="26.0" prefWidth="147.0" text="Yüzme  kiyafetleri">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="589.0" prefHeight="67.0" prefWidth="717.0">
+         <children>
+            <Button layoutX="108.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="108.0" text="Back">
+               <effect>
+                  <InnerShadow color="#b53d3d" />
+               </effect>
+            </Button>
+            <Button layoutX="341.0" layoutY="14.0" mnemonicParsing="false" onAction="#Search" prefHeight="40.0" prefWidth="108.0" text="Search">
+               <effect>
+                  <InnerShadow color="#f86262" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <InnerShadow color="#dd9191" />
+   </effect>
+</AnchorPane>
